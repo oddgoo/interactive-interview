@@ -66,6 +66,11 @@ const Home: NextPage = () => {
             </p>
           </a>
         </div>
+        <div>
+          <h3 className="text-2xl font-bold">Interview</h3>
+          <div className="bg-slate-100 rounded-xl p-8 dark:bg-slate-800 text-white">Question</div>
+          <div>Answer</div>
+        </div>
       </main>
 
       <footer className="flex h-24 w-full items-center justify-center border-t">
