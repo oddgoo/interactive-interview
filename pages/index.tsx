@@ -4,8 +4,7 @@ import React, {useState} from 'react';
 
 const Home: NextPage = () => {
 
-    const [questionOpen, setQuestionOpen] = useState(false)
-    const [questionOpen2, setQuestionOpen2] = useState(false)
+    const [questionsState, setQuestionsState] = useState({"1":false, "2":false})
 
     return (
         <div className="">
@@ -20,12 +19,16 @@ const Home: NextPage = () => {
                 </h1>
 
                 <div className="space-y-5 ">
-                    <div className="bg-slate-100 rounded-xl p-4 dark:bg-slate-800 text-white w-full text-center font-bold"
+                    <div className="bg-slate-100 rounded-xl p-4 dark:bg-slate-800 text-white w-full text-center font-bold cursor-pointer"
                          onClick={() => {
-                             setQuestionOpen(!questionOpen)
-                         }}>What was the inspiration for the game's concept and story?
+                             setQuestionsState({
+                                 ...questionsState,
+                                 "1":!questionsState["1"]
+                             })
+                         }}>
+                        What was the inspiration for the game's concept and story?
                     </div>
-                    {questionOpen &&
+                    {questionsState["1"] &&
                     <div className="space-y-5">
 
                         <p>The original Amberial (2007) has a curious story.</p>
@@ -58,12 +61,16 @@ const Home: NextPage = () => {
                 </div>
 
                 <div className="space-y-5 my-8">
-                    <div className="bg-slate-100 rounded-xl p-4 dark:bg-slate-800 text-white w-full text-center font-bold"
+                    <div className="bg-slate-100 rounded-xl p-4 dark:bg-slate-800 text-white w-full text-center font-bold cursor-pointer"
                          onClick={() => {
-                             setQuestionOpen2(!questionOpen2)
-                         }}>How did you come up with the game's unique mechanics and features?
+                             setQuestionsState({
+                                 ...questionsState,
+                                 "2":!questionsState["2"]
+                             })
+                         }}>
+                        How did you come up with the game's unique mechanics and features?
                     </div>
-                    {questionOpen2 &&
+                    {questionsState["2"] &&
                         <div className="space-y-5">
 
                             <p>Amberial is our life-long project to take everything that we like about platformers, and make an evolving universe that's all about creativity and the pure joy of rolling and bouncing around.
