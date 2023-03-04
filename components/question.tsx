@@ -1,17 +1,17 @@
 import React, {useState} from "react";
 
 type Props = {
-    questionId: String,
-    questionText: String,
-    answerHtml: String,
+    questionId: string,
+    questionText: string,
+    answerHtml: string,
 }
 
-const Question = ({ questionId, questionText, answerHtml }: Props) => {
+export default function Question ({ questionId, questionText, answerHtml }: Props) {
 
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className="space-y-5 " key={questionId}>
+        <div className="space-y-5 ">
             <div className="bg-slate-100 rounded-xl p-4 dark:bg-slate-800 text-white w-full text-center
                     font-bold cursor-pointer"
                  onClick={() => {
@@ -19,9 +19,11 @@ const Question = ({ questionId, questionText, answerHtml }: Props) => {
                  }}>
                 {questionText}
             </div>
-            {isOpen && <div className="space-y-5">{answerHtml} </div>}
+            {isOpen && <div className="space-y-5"
+                            dangerouslySetInnerHTML={{ __html: answerHtml }}
+            >
+            </div>}
         </div>
     )
-}
 
-export default Question
+}

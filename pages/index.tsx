@@ -9,7 +9,7 @@ type Props = {
     allQuestions: QuestionContent[]
 }
 
-const Home: NextPage = ({ allQuestions }: Props) => {
+const Home = ({ allQuestions }: Props) => {
 
     return (
         <div className="">
@@ -23,9 +23,10 @@ const Home: NextPage = ({ allQuestions }: Props) => {
                     Interview with Cuauh "oddgoo" Moreno
                 </h1>
                 {allQuestions.map((question) => (
-                    <Question questionId={question.id}
+                    <Question key = {question.id}
+                              questionId={question.id}
                               questionText={question.question}
-                              answerHtml={question.content}
+                              answerHtml={question.formattedContent}
                     />
                 ))}
 
@@ -45,10 +46,11 @@ const Home: NextPage = ({ allQuestions }: Props) => {
 }
 
 export const getStaticProps = async () => {
-    const allQuestions = getAllQuestions([
+    const allQuestions = await getAllQuestions([
         'id',
         'question',
-        'content'
+        'content',
+        'formattedContent'
     ])
 
     return {
