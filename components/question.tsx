@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import markdownStyles from './markdown-styles.module.css'
 
 type Props = {
     questionId: string,
@@ -11,18 +12,19 @@ export default function Question ({ questionId, questionText, answerHtml }: Prop
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className="space-y-5 ">
+        <div className="space-y-1 my-7 ">
             <div className="bg-slate-100 rounded-xl p-4 dark:bg-slate-800 text-white w-full text-center
-                    font-bold cursor-pointer"
+                    font-bold cursor-pointer shadow-lg"
                  onClick={() => {
                      setIsOpen(!isOpen)
                  }}>
                 {questionText}
             </div>
-            {isOpen && <div className="space-y-5"
-                            dangerouslySetInnerHTML={{ __html: answerHtml }}
-            >
-            </div>}
+            <div className="">
+                <div className={markdownStyles['markdown']} style={{ display: (isOpen ? 'block' : 'none') }}
+                                dangerouslySetInnerHTML={{ __html: answerHtml }}>
+                </div>
+            </div>
         </div>
     )
 

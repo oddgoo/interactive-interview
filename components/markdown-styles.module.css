@@ -1,0 +1,9 @@
+.markdown {
+    @apply text-lg leading-relaxed space-y-5 bg-white p-10 rounded-xl shadow-lg;
+}
+
+.markdown img{
+    @apply rounded-xl shadow-md mx-auto;
+    width: 500px;
+
+}

@@ -1,5 +1,5 @@
 ---
-id: 'amberial-inspiration'
+order: 1
 question: "What was the inspiration for the game's concept and story?"
 ---
 

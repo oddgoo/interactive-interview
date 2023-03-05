@@ -23,7 +23,8 @@ const Home = ({ allQuestions }: Props) => {
                     Interview with Cuauh "oddgoo" Moreno
                 </h1>
                 {allQuestions.map((question) => (
-                    <Question key = {question.id}
+                    <Question
+                              key = {question.id}
                               questionId={question.id}
                               questionText={question.question}
                               answerHtml={question.formattedContent}

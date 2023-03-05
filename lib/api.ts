@@ -19,11 +19,16 @@ export async function getQuestionBySlug(slug: string, fields: string[] = []) {
     const fullPath = join(postsDirectory, `${realSlug}.md`)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const { data, content } = matter(fileContents)
-
+    const order = data['order'] ? data['order'] : 9999;
     const items: Items = {}
+
+    items['order'] = order;
 
     for(const field of fields){
         if (field === 'slug') {
+            items[field] = realSlug
+        }
+        if (field === 'id') {
             items[field] = realSlug
         }
         if (field === 'content') {
@@ -53,5 +58,6 @@ export async function getAllQuestions(fields: string[] = []) {
         console.log("Getting content for slug: " + slug)
         questions.push(await getQuestionBySlug(slug, fields))
     }
+    questions = questions.sort((q1, q2) => (q1.order < q2.order ? -1 : 1))
     return questions
 }
