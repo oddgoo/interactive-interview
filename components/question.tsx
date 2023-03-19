@@ -12,9 +12,9 @@ export default function Question ({ questionId, questionText, answerHtml }: Prop
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className="space-y-1 my-7 ">
-            <div className="bg-slate-100 rounded-xl p-4 dark:bg-slate-800 text-white w-full text-center
-                    font-bold cursor-pointer shadow-lg"
+        <div className="space-y-1 my-8 ">
+            <div className=" bg-slate-100 rounded-xl p-4 dark:bg-slate-800 text-white text-center
+                    font-bold cursor-pointer shadow-lg shadow-inner"
                  onClick={() => {
                      setIsOpen(!isOpen)
                  }}>

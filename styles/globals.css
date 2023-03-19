@@ -7,9 +7,33 @@
 @layer base {
     html {
         font-family: Raleway, sans-serif;
+        background-color: #000;
     }
 }
 
 body{
-    background-color: #eee;
+
+    background-image: url("https://amberial.com/img/background-alternate.jpg");
+    background-position: center;
+    background-size: cover;
 }
+
+.button{
+    font-family: cinzelbold;
+}
+
+/*.button {*/
+/*    border-width: 4px;*/
+/*    border-style: solid;*/
+/*    border-left-color: rgb(180 83 9 / var(--tw-border-opacity));*/
+/*    border-right-color: rgb(180 83 9 / var(--tw-border-opacity));*/
+/*    --tw-border-opacity: 1;*/
+/*    border-top-color: rgb(255 199 0 / var(--tw-border-opacity));*/
+/*    border-bottom-color: rgb(255 199 0 / var(--tw-border-opacity));*/
+/*    --tw-bg-opacity: 1;*/
+/*    background-color: rgb(70 3 70 / var(--tw-bg-opacity));*/
+/*    font-family: cinzelbold;*/
+/*    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);*/
+/*    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);*/
+/*    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);*/
+/*}*/

@@ -1,5 +1,5 @@
 .markdown {
-    @apply text-lg leading-relaxed space-y-5 bg-white p-10 rounded-xl shadow-lg;
+    @apply leading-relaxed space-y-5 bg-white p-10 rounded-xl shadow-lg bg-black text-gray-50;
 }
 
 .markdown img{
