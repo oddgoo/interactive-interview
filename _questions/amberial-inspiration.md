@@ -9,7 +9,7 @@ And as a web game contained in a window, I envisioned a simple marble character 
 pushing against the walls of the browser,
 trying to use momentum, springs and strings to get enough force to break out.
 
-![Screenshot of Amberial 1](https://picon.ngfiles.com/378000/flash_378790_card.webp?f1675351127)
+![Screenshot of Amberial 1](./images/amberial_2007.webp)
 
 So I started making that, but before I got to coding the actual wall breaking mechanics, I
     realised the game was fun enough as it was, and my focus shifter to building environments
@@ -19,6 +19,8 @@ The concept itself is heavily inspired by games like Marble Madness, Within a De
     Super Monkey Ball, where you cannot jump and all the focus on the environment and level
     design. In games like these, you are not only seeing where you can land and what obstacles
     to avoid, but you get to savour the angle of each bounce, the momentum against every gap.
+
+![Screenshot of Amberial Nebulosa](./images/nebulosa.png)
 
 After the first Amberial, each new version has been an evolution of the concept heavily
     guided by player feedback. This all culminates in Amberial Dreams, which has everything each

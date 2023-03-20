@@ -16,3 +16,5 @@ Seeing the concept of a collaborative community being succesful and coming to li
 This is a game where the the premise of the story itself is about dreamers coming together and imagining a universe, and that is the concept that's also driving our interaction with the community.
 
 We want to help everyone see their imagination come alive, so seeing this actually happen has already made us feel like the game is a success.
+ 
+![An image of rolling Amber](./images/Geosphere.png)

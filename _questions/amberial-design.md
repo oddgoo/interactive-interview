@@ -7,7 +7,7 @@ I am very driven by the concept of **Sense of Place** which Wikipedia defines as
 
 The realms in the game were initially conceptualised by a genuine process of taking cues from actual dreams, the real worlds, and closing my eyes to see what comes up in the screen of the imagination. These concepts are then refined by an iterative process of collaborating with the team, the community, letting music drive more visuals, and letting visuals drive more music.
 
-[early concept]
+![Screenshot](./images/namu.png)
 
 I like to call this a deliberate synesthetic journey!
 

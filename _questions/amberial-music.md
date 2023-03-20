@@ -7,7 +7,7 @@ The game takes place on a cosmic soup of golden factories, colorul parades, neon
 
 This of course is obvious with the visuals, but there is a very fun challenge of also mapping the music to these concepts. Each world is a different genre and style, so you feel like you are moving through musical dimensions with unique personalities.
 
-[game track]
+![Screenshot](./images/track.png)
 
 And what is really cool is that the music track then DRIVES somes more dynamic elements in the game, eg: many pieces move to its rhythm; when the player collides, it makes a note that is in key with the track, etc.
 
